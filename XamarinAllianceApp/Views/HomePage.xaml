@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinAllianceApp.Views.HomePage"
+             Title="Home Page">
+
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button x:Name="loginButton"
+            Text="Sign-in"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            Clicked="OnLoginButton_Clicked"
+            Grid.Row="1" />
+
+        <Button x:Name="characterListButton"
+            Text="Character List"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            Clicked="OnCharacterListButton_Clicked"
+            Grid.Row="2" />
+
+        <Button x:Name="receiveCreditButton"
+            Text="Receive Credit"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            Clicked="OnReceiveCreditButton_Clicked"
+            Grid.Row="3" />
+
+        <Label x:Name="guidLabel"
+            TextColor="#77d065"
+            FontSize="10"
+            Text=""
+            Grid.Row="4" />
+    </Grid>
+</ContentPage>
